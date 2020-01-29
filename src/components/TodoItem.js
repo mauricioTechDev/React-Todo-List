@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-export  class TodoItem extends Component {
+export class TodoItem extends Component {
   getStyle = () => {
     return {
       background: '#add8e6',
@@ -40,7 +40,7 @@ TodoItem.propTypes = {
 }
 
 const btnStyle ={
-  background: "#ff0000",
+  background: "#235dff",
   color: "white",
   border: 'none',
   padding: '5px 9px',

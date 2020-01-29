@@ -19,11 +19,16 @@ export class AddTodo extends Component {
     return (
       <form onSubmit={this.onSubmit} style={{ display: 'flex' }}>
         <input type='text' name='title' placeholder='Add Todo ...' style={{ flex: '10', padding: '5px'}} value={this.state.title} onChange={this.onChange}/>
-        <input type='submit' value='Submit' className='btn' style={{flex: '1'}}/>
+        <input type='submit' value='Submit' className='btn' style={submitBtn}/>
       </form>
     )
   }
 }
+
+const submitBtn = {
+  background: '#235dff'
+}
+
 
 // PropTypes
 AddTodo.propTypes = {
